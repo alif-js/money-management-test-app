@@ -3,6 +3,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const previousWithdrawAmount = getTextElementValueById('withdraw-total');
     if (newWithDrawAmount > previousWithdrawAmount) {
         alert("Insufficient Balance");
+        return;
     }
     else {
         const withdrawTotal = newWithDrawAmount + previousWithdrawAmount;
