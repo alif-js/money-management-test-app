@@ -1,14 +1,14 @@
 document.getElementById('btn-withdraw').addEventListener('click', function () {
     const newWithDrawAmount = getInputFieldValueById('withdraw-field');
     const previousWithdrawAmount = getTextElementValueById('withdraw-total');
-    if (newWithDrawAmount > previousWithdrawAmount) {
-        alert("Insufficient Balance");
-        return;
-    }
-    else {
-        const withdrawTotal = newWithDrawAmount + previousWithdrawAmount;
-        setTextElementValueById('withdraw-total', withdrawTotal)
-    }
+    // if (newWithDrawAmount > previousWithdrawAmount) {
+    //     alert("Insufficient Balance");
+    //     return;
+    // }
+
+    const withdrawTotal = newWithDrawAmount + previousWithdrawAmount;
+    setTextElementValueById('withdraw-total', withdrawTotal)
+
 
 
     const previousBalanceTotal = getTextElementValueById('balance-total');
